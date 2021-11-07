@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import styled, { css } from "styled-components";
-import { generateContainer } from "../../styled";
+import { Container as DefaultContainer } from "../../styled";
 // import styles from "./content.module.scss";
 
 const Main = styled.main`
@@ -9,8 +9,8 @@ const Main = styled.main`
   flex: 1 auto;
 `;
 
-const Container = styled.div`
-  ${generateContainer}
+const Container = styled(DefaultContainer)`
+  padding: 0px;
 `;
 
 interface Props {

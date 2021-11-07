@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 // import styles from "./footer.module.scss";
 
 import styled, { css } from "styled-components";
-import { generateContainer } from "../../styled";
+import { Container as DefaultContainer } from "../../styled";
 const Wrapper = styled.footer`
   background: #eee;
   width: 100%;
@@ -11,8 +11,8 @@ const Wrapper = styled.footer`
   align-items: center;
 `;
 
-const Container = styled.div`
-  ${generateContainer}
+const Container = styled(DefaultContainer)`
+  padding: 0px;
 `;
 
 export default function Footer(): ReactElement {
